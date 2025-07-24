@@ -1,0 +1,45 @@
+<!-- header.html -->
+<header class="bg-blue-900 shadow-md">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="flex items-center space-x-4">
+      <svg class="w-8 h-8 text-orange-400" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 2L2 7v13h20V7L12 2zM11 18h2v-4h-2v4zM12 4.5l6 3v7h-4v-4H10v4H6v-7l6-3z" />
+      </svg>
+      <div>
+        <h1 class="text-2xl font-extrabold text-white">BTP</h1>
+        <!-- <p class="text-xs text-orange-400 font-semibold">Expertise & Fiabilité depuis 20 ans</p> -->
+      </div>
+    </div>
+
+    <nav id="main-nav" class="hidden md:flex space-x-8 text-white font-semibold text-sm tracking-wide">
+      <a href="index.html" class="hover:text-orange-400 transition">Accueil</a>
+      <a href="about.html" class="hover:text-orange-400 transition">A propos</a>
+      <a href="services.html" class="hover:text-orange-400 transition">Services</a>
+      <a href="realisations.html" class="hover:text-orange-400 transition">Réalisations</a>
+      <a href="devis.html" class="hover:text-orange-400 transition">Demander un devis</a>
+      <a href="contact.html" class="hover:text-orange-400 transition">Contact</a>
+    </nav>
+
+    <a href="devis.html" class="hidden md:inline-block bg-orange-400 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded shadow-lg transition">
+      Demander un devis
+    </a>
+
+    <button id="menu-btn" class="md:hidden focus:outline-none" aria-label="Toggle menu">
+      <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Menu mobile -->
+  <nav id="mobile-menu" class="hidden bg-blue-800">
+    <a href="index.html" class="block px-6 py-3 text-white hover:bg-blue-700">Accueil</a>
+    <a href="about.html" class="block px-6 py-3 text-white hover:bg-blue-700">A propos</a>
+    <a href="services.html" class="block px-6 py-3 text-white hover:bg-blue-700">Services</a>
+    <a href="realisations.html" class="block px-6 py-3 text-white hover:bg-blue-700">Réalisations</a>
+    <a href="devis.html" class="block px-6 py-3 text-white hover:bg-blue-700">Demander un devis</a>
+    <a href="contact.html" class="block px-6 py-3 text-white hover:bg-blue-700">Contact</a>
+  </nav>
+  </style>
+  <script src="js/script.js"></script>
+</header>

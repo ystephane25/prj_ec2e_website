@@ -1,0 +1,111 @@
+<!-- index.html -->
+<!-- Page d'accueil principale -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Accueil</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Conteneur pour le header -->
+  <div id="header-container"></div>
+
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+
+        // Activation du lien actif dans la nav
+        // Timeout pour s'assurer que le DOM est bien mis à jour
+        setTimeout(() => {
+          // Récupérer le nom du fichier courant, ex: "index.html"
+          let currentPage = window.location.pathname.split('/').pop().toLowerCase();
+
+          // Si racine (ex: http://site.com/), on considère index.html
+          if (currentPage === '') currentPage = 'index.html';
+
+          // Sélection de tous les liens dans la nav
+          const navLinks = document.querySelectorAll('#main-nav a');
+
+          navLinks.forEach(link => {
+            let href = link.getAttribute('href').toLowerCase();
+
+            // Normaliser href: si pas d'extension, ajouter .html
+            if (!href.endsWith('.html')) {
+              href = href === 'index' ? 'index.html' : href + '.html';
+            }
+
+            // Appliquer la classe active si correspondance
+            if (href === currentPage) {
+              link.classList.add('text-blue-900', 'font-bold', 'underline');
+            } else {
+              link.classList.remove('text-blue-900', 'font-bold', 'underline');
+            }
+          });
+        }, 50);
+      })
+      .catch(err => console.error('Erreur chargement header:', err));
+  </script>
+
+  <!-- Section principale -->
+  <section class="bg-[url('https://images.unsplash.com/photo-1581090700227-4c3b8c403e45')] bg-cover bg-center h-[60vh] flex items-center justify-center">
+    <div class="bg-black bg-opacity-60 p-8 rounded-lg text-white text-center">
+      <h2 class="text-4xl font-bold mb-4">Construire l'avenir, un projet à la fois</h2>
+      <p class="mb-4 text-lg">Expertise en construction, rénovation et génie civil.</p>
+      <a href="devis.html" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold">Demander un devis</a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="py-16 px-4 max-w-7xl mx-auto">
+    <h3 class="text-3xl font-bold text-center mb-10">Nos Services</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+        <h4 class="text-xl font-bold mb-2">Construction générale</h4>
+        <p>Nous réalisons vos projets immobiliers clé en main, du gros œuvre à la finition.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+        <h4 class="text-xl font-bold mb-2">Rénovation</h4>
+        <p>Réhabilitation complète de bâtiments anciens, appartements, bureaux et maisons.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+        <h4 class="text-xl font-bold mb-2">Génie civil</h4>
+        <p>Ouvrages publics, routes, fondations spéciales, voiries, canalisations.</p>
+      </div>
+    </div>
+    <div class="text-center mt-8">
+      <a href="services.html" class="text-blue-600 font-semibold underline">Voir tous les services</a>
+    </div>
+  </section>
+
+  <!-- Réalisations -->
+  <section class="bg-gray-100 py-16 px-4">
+    <h3 class="text-3xl font-bold text-center mb-10">Nos Réalisations</h3>
+    <div class="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto">
+      <img src="https://source.unsplash.com/400x300/?construction,site" alt="Construction site" class="rounded-lg shadow" />
+      <img src="https://source.unsplash.com/400x300/?building,architecture" alt="Architecture" class="rounded-lg shadow" />
+      <img src="https://source.unsplash.com/400x300/?renovation,house" alt="Rénovation maison" class="rounded-lg shadow" />
+    </div>
+    <div class="text-center mt-8">
+      <a href="realisations.html" class="text-blue-600 font-semibold underline">Voir plus de projets</a>
+    </div>
+  </section>
+
+  <!-- Conteneur pour le footer -->
+  <div id="footer-container"></div>
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur de chargement du footer:', error));
+  </script>
+ <script src="js/script.js"></script>
+</body>
+</html>

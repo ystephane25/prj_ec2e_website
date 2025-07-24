@@ -1,0 +1,6 @@
+/* Lien actif */
+nav a.active {
+  color: #fb923c; /* orange-400 */
+  font-weight: bold;
+  text-decoration: underline;
+}
