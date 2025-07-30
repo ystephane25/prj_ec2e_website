@@ -1,6 +1,38 @@
-/* Lien actif */
+/* lien du page actif */
 nav a.active {
-  color: #fb923c; /* orange-400 */
+  color: #fb923c;
   font-weight: bold;
   text-decoration: underline;
+}
+/* les cardes */
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* le survole */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* titre des cadres */
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* pour le mobile */
+.mobile-link {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: white;
+  transition: background 0.3s ease;
+}
+.mobile-link:hover {
+  background-color: #1e40af;
 }
