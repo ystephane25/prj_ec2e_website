@@ -14,44 +14,6 @@
   <!-- Conteneur pour le header -->
   <div id="header-container"></div>
 
-  <script>
-    fetch('header.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header-container').innerHTML = data;
-
-        // Activation du lien actif dans la nav
-        // Timeout pour s'assurer que le DOM est bien mis à jour
-        setTimeout(() => {
-          // Récupérer le nom du fichier courant, ex: "index.html"
-          let currentPage = window.location.pathname.split('/').pop().toLowerCase();
-
-          // Si racine (ex: http://site.com/), on considère index.html
-          if (currentPage === '') currentPage = 'index.html';
-
-          // Sélection de tous les liens dans la nav
-          const navLinks = document.querySelectorAll('#main-nav a');
-
-          navLinks.forEach(link => {
-            let href = link.getAttribute('href').toLowerCase();
-
-            // Normaliser href: si pas d'extension, ajouter .html
-            if (!href.endsWith('.html')) {
-              href = href === 'index' ? 'index.html' : href + '.html';
-            }
-
-            // Appliquer la classe active si correspondance
-            if (href === currentPage) {
-              link.classList.add('text-blue-900', 'font-bold', 'underline');
-            } else {
-              link.classList.remove('text-blue-900', 'font-bold', 'underline');
-            }
-          });
-        }, 50);
-      })
-      .catch(err => console.error('Erreur chargement header:', err));
-  </script>
-
   <!-- Section principale -->
   <section class="bg-[url('https://images.unsplash.com/photo-1581090700227-4c3b8c403e45')] bg-cover bg-center h-[60vh] flex items-center justify-center">
     <div class="bg-black bg-opacity-60 p-8 rounded-lg text-white text-center">
@@ -98,14 +60,7 @@
 
   <!-- Conteneur pour le footer -->
   <div id="footer-container"></div>
-  <script>
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer-container').innerHTML = data;
-      })
-      .catch(error => console.error('Erreur de chargement du footer:', error));
-  </script>
+  
  <script src="js/script.js"></script>
 </body>
 </html>
