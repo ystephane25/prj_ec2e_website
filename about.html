@@ -1,29 +1,87 @@
-<!-- about.html -->
-<!-- Page A propos -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>A propos | BTP Élite</title>
+  <title>À propos | BTP Élite</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800">
 
-<!-- Conteneur pour le header -->
-<div id="header-container"></div>
-  
-  <section class="max-w-4xl mx-auto py-16 px-4">
-    <h2 class="text-4xl font-bold mb-6">Qui sommes-nous ?</h2>
-    <p class="mb-4">BTP Élite est une entreprise spécialisée dans les domaines de la construction, la rénovation et les travaux publics. Avec plus de 10 ans d'expérience, nous accompagnons nos clients dans tous leurs projets avec rigueur, expertise et passion.</p>
-    <p>Nos équipes pluridisciplinaires assurent des prestations de qualité dans le respect des délais et des normes de sécurité.</p>
+  <!-- Conteneur pour le header -->
+  <div id="header-container"></div>
+
+  <!-- ===== HERO À PROPOS ===== -->
+  <section class="bg-cover bg-center h-[50vh] flex items-center justify-center relative" style="background-image: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be');">
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative z-10 text-white text-center px-6 animate-fade-in-down">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">À propos de BTP Élite</h1>
+      <p class="text-lg">Construire la confiance, brique par brique</p>
+    </div>
   </section>
-  
+
+  <!-- ===== PRÉSENTATION ===== -->
+  <section class="max-w-5xl mx-auto py-16 px-4">
+    <h2 class="text-3xl font-bold mb-6 text-center">Qui sommes-nous ?</h2>
+    <p class="mb-4 text-lg text-justify">
+      BTP Élite est une entreprise spécialisée dans la construction, la rénovation et les travaux publics. Depuis plus de 10 ans, nous accompagnons nos clients dans leurs projets avec rigueur, expertise et passion.
+    </p>
+    <p class="text-lg text-justify">
+      Nos équipes pluridisciplinaires assurent des prestations de qualité, respectant les normes de sécurité et les délais. Nous croyons à une approche humaine, durable et innovante du BTP.
+    </p>
+  </section>
+
+  <!-- ===== VALEURS ===== -->
+  <section class="bg-white py-12 px-4">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center">
+      <div>
+        <h3 class="text-xl font-semibold mb-2 text-blue-700">Qualité</h3>
+        <p>Des matériaux robustes et un travail irréprochable à chaque étape.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2 text-blue-700">Respect</h3>
+        <p>Engagement envers nos clients, nos employés et l’environnement.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2 text-blue-700">Innovation</h3>
+        <p>Technologies modernes pour une efficacité optimale et durable.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATISTIQUES ===== -->
+  <section class="bg-blue-50 py-16 px-4 text-center">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-6">
+      <div>
+        <p class="text-4xl font-bold text-blue-700">10+</p>
+        <p>Années d'expérience</p>
+      </div>
+      <div>
+        <p class="text-4xl font-bold text-blue-700">500+</p>
+        <p>Projets réalisés</p>
+      </div>
+      <div>
+        <p class="text-4xl font-bold text-blue-700">98%</p>
+        <p>Satisfaction client</p>
+      </div>
+      <div>
+        <p class="text-4xl font-bold text-blue-700">100%</p>
+        <p>Engagement qualité</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== APPEL À L’ACTION ===== -->
+  <section class="text-center py-12">
+    <h3 class="text-2xl font-bold mb-4">Un projet ? Une idée ?</h3>
+    <p class="mb-6">Nous sommes à votre écoute pour construire ensemble.</p>
+    <a href="contact.html" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-md transition">Contactez-nous</a>
+  </section>
+
   <!-- Conteneur pour le footer -->
   <div id="footer-container"></div>
-  <!--#include file="footer.html" -->
 
- <script src="js/script.js"></script>
-
+  <script src="js/script.js"></script>
 </body>
 </html>
