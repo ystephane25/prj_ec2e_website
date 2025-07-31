@@ -48,3 +48,30 @@ fetch('footer.html')
     document.getElementById('footer-container').innerHTML = html;
   })
   .catch(error => console.error('Erreur de chargement du footer:', error));
+
+
+    // ENvoie de mail
+// Initialiser EmailJS
+emailjs.init("ZimSYHbi-N9o_0v3V");
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contactForm");
+  const messageBox = document.getElementById("formMessage");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_kpu8jyp", "template_359opys", this)
+      .then(() => {
+        console.log("✅ Email envoyé");
+        messageBox.textContent = "✅ Message envoyé avec succès !";
+        messageBox.className = "text-green-600 mt-4";
+        form.reset();
+      })
+      .catch((error) => {
+        console.error("❌ Erreur EmailJS :", error);
+        messageBox.textContent = "❌ Une erreur est survenue. Veuillez réessayer.";
+        messageBox.className = "text-red-600 mt-4";
+      });
+  });
+});

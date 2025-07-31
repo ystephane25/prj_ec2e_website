@@ -12,12 +12,46 @@
   <!-- Conteneur pour le header -->
   <div id="header-container"></div>
 
-  <section class="max-w-7xl mx-auto py-16 px-4">
-    <h2 class="text-4xl font-bold mb-8">Nos Réalisations</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <img src="#" class="rounded shadow" />
-      <img src="#" class="rounded shadow" />
-      <img src="#" class="rounded shadow" />
+  <section class="max-w-7xl mx-auto py-20 px-4" id="realisations">
+    <h2 class="text-4xl font-bold text-center text-blue-900 mb-4">Nos Réalisations</h2>
+    <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+      Découvrez quelques-uns de nos projets réalisés dans les domaines de la construction, rénovation et génie civil.
+    </p>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- Réalisation 1 -->
+      <div class="group relative overflow-hidden rounded-lg shadow-lg" data-aos="fade-up">
+        <img src="/images/realisation1.jpg" alt="Chantier terminé" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-300">
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-white">
+          <h3 class="text-lg font-semibold">Résidence Moderne – Ouagadougou</h3>
+          <p class="text-sm">Livraison : Janvier 2024</p>
+        </div>
+      </div>
+
+      <!-- Réalisation 2 -->
+      <div class="group relative overflow-hidden rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="100">
+        <img src="/images/realisation2.jpg" alt="Immeuble rénové" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-300">
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-white">
+          <h3 class="text-lg font-semibold">Hôtel rénové – Bobo</h3>
+          <p class="text-sm">Projet 100% clé en main</p>
+        </div>
+      </div>
+
+      <!-- Réalisation 3 -->
+      <div class="group relative overflow-hidden rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+        <img src="/images/realisation3.jpg" alt="Pont construit" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-300">
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-white">
+          <h3 class="text-lg font-semibold">Pont rural – Koudougou</h3>
+          <p class="text-sm">Génie civil & voirie</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Appel à l’action -->
+    <div class="text-center mt-12">
+      <a href="/realisations.html" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition">
+        Voir toutes nos réalisations
+      </a>
     </div>
   </section>
   
