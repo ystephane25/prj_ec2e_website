@@ -1,63 +1,85 @@
 <!-- services.html -->
-<!-- Page des services -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services | BTP</title>
+  <title>Nos Services - EC2E/BTP</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800">
   <!-- Conteneur pour le header -->
   <div id="header-container"></div>
 
-  <section class="max-w-7xl mx-auto py-20 px-4">
-    <h2 class="text-4xl font-bold text-center mb-12 text-blue-800">Nos Services</h2>
-    <div class="grid md:grid-cols-3 gap-10">
-      <!-- Service 1 -->
-      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 group">
-        <div class="flex items-center justify-center w-16 h-16 bg-orange-100 text-orange-500 rounded-full mb-4 mx-auto group-hover:bg-orange-500 group-hover:text-white transition">
-          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-            <path d="M3 10h18M4 16h16M5 6h14" />
-          </svg>
-        </div>
-        <h3 class="text-xl font-semibold text-center mb-2 text-gray-800">Construction générale</h3>
-        <p class="text-sm text-gray-600 text-center">Conception, gros œuvre, second œuvre, livraison clé en main de bâtiments résidentiels ou professionnels.</p>
-      </div>
-
-      <!-- Service 2 -->
-      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 group">
-        <div class="flex items-center justify-center w-16 h-16 bg-orange-100 text-orange-500 rounded-full mb-4 mx-auto group-hover:bg-orange-500 group-hover:text-white transition">
-          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-            <path d="M4 12h16M4 6h16M4 18h16" />
-          </svg>
-        </div>
-        <h3 class="text-xl font-semibold text-center mb-2 text-gray-800">Rénovation</h3>
-        <p class="text-sm text-gray-600 text-center">Réhabilitation, modernisation ou transformation complète d'espaces privés ou publics.</p>
-      </div>
-
-      <!-- Service 3 -->
-      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 group">
-        <div class="flex items-center justify-center w-16 h-16 bg-orange-100 text-orange-500 rounded-full mb-4 mx-auto group-hover:bg-orange-500 group-hover:text-white transition">
-          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-            <path d="M3 12l18 6-18 6v-12z" />
-          </svg>
-        </div>
-        <h3 class="text-xl font-semibold text-center mb-2 text-gray-800">Génie civil</h3>
-        <p class="text-sm text-gray-600 text-center">Travaux d'infrastructures lourdes : routes, ponts, canalisations, fondations spéciales.</p>
-      </div>
+  <!-- Section d’intro -->
+  <section class="bg-white py-20 shadow-inner">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h1 class="text-5xl font-bold text-blue-800 mb-6">Nos Services</h1>
+      <p class="text-lg text-gray-600">
+        EC2E/BTP propose une gamme complète de services dans le domaine du BTP
+      </p>
     </div>
-    <div class="text-center mt-12">
-      <a href="services.html" class="inline-block bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 px-6 rounded transition">
-        Voir tous nos services
+  </section>
+
+  <!-- Liste des services -->
+  <section class="max-w-7xl mx-auto py-20 px-4">
+    <div class="grid md:grid-cols-3 gap-10">
+      <!-- Carte Service -->
+      <div class="bg-white border rounded-xl p-6 shadow-sm hover:shadow-lg transition">
+        <h2 class="text-xl font-semibold text-blue-700 mb-3 text-center">Conception</h2>
+        <p class="text-sm text-gray-600 text-center">
+          Création de plans architecturaux modernes, alliant esthétique, fonctionnalité et conformité aux normes.
+        </p>
+      </div>
+
+      <div class="bg-white border rounded-xl p-6 shadow-sm hover:shadow-lg transition">
+        <h2 class="text-xl font-semibold text-blue-700 mb-3 text-center">Études</h2>
+        <p class="text-sm text-gray-600 text-center">
+          Réalisation d’études techniques, structurelles et économiques pour garantir la faisabilité de vos projets.
+        </p>
+      </div>
+
+      <div class="bg-white border rounded-xl p-6 shadow-sm hover:shadow-lg transition">
+        <h2 class="text-xl font-semibold text-blue-700 mb-3 text-center">Exécution</h2>
+        <p class="text-sm text-gray-600 text-center">
+          Mise en œuvre des travaux avec des équipes qualifiées, dans le respect des délais et des standards de qualité.
+        </p>
+      </div>
+
+      <div class="bg-white border rounded-xl p-6 shadow-sm hover:shadow-lg transition">
+        <h2 class="text-xl font-semibold text-blue-700 mb-3 text-center">Suivi de chantier</h2>
+        <p class="text-sm text-gray-600 text-center">
+          Contrôle régulier de l’avancement des travaux, coordination des équipes et respect du cahier des charges.
+        </p>
+      </div>
+
+      <div class="bg-white border rounded-xl p-6 shadow-sm hover:shadow-lg transition">
+        <h2 class="text-xl font-semibold text-blue-700 mb-3 text-center">Contrôle qualité</h2>
+        <p class="text-sm text-gray-600 text-center">
+          Inspections techniques, vérifications et ajustements pour assurer une qualité irréprochable à chaque étape.
+        </p>
+      </div>
+
+      <!-- <div class="bg-white border rounded-xl p-6 shadow-sm hover:shadow-lg transition flex items-center justify-center">
+        <img src="img/construction.svg" alt="Construction" class="w-32 h-32 opacity-40" />
+      </div> -->
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center mt-16">
+      <a href="devis.html" class="inline-block bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 px-8 rounded shadow transition">
+        Demandez un devis personnalisé
       </a>
     </div>
   </section>
 
   <!-- Conteneur pour le footer -->
   <div id="footer-container"></div>
-  <!--#include file="footer.html" -->
- <script src="js/script.js"></script>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
