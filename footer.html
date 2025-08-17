@@ -1,29 +1,56 @@
-<!-- footer.html -->
-<!-- Pied de page avec informations de contact et navigation secondaire -->
-<footer class="bg-blue-900 text-white py-8 mt-12">
-  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-6">
+<!-- ================= footer.html ================= -->
+<footer class="bg-gray-900 text-white mt-12">
+  <div class="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+    
+    <!-- Bloc logo + description -->
     <div>
-      <h5 class="font-bold text-lg mb-2">EC2E/BTP</h5>
-      <p>Le batisseur de la nouvelle génération.</p>
+      <div class="flex items-center space-x-3">
+        <img src="images/btp_logo.jpg" alt="Logo EC2E/BTP" class="w-14 h-14 object-contain">
+        <h2 class="text-xl font-bold">EC2E/BTP</h2>
+      </div>
+      <p class="mt-3 text-sm text-gray-300">
+        Le bâtisseur de la nouvelle génération. Nous réalisons vos projets avec rigueur, innovation et engagement.
+      </p>
     </div>
+
+    <!-- Bloc liens utiles -->
     <div>
-      <h5 class="font-bold text-lg mb-2">Liens utiles</h5>
-      <ul class="space-y-1">
-        <li><a href="index.html" class="hover:underline">Accueil</a></li>
-        <li><a href="services.html" class="hover:underline">Services</a></li>
-        <li><a href="realisations.html" class="hover:underline">Réalisations</a></li>
-        <li><a href="devis.html" class="hover:underline">Démande de devis</a></li>
-        <li><a href="contact.html" class="hover:underline">Contact</a></li>
+      <h3 class="text-lg font-semibold mb-3">Liens utiles</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="index.html" class="hover:text-orange-400">Accueil</a></li>
+        <li><a href="about.html" class="hover:text-orange-400">À propos</a></li>
+        <li><a href="services.html" class="hover:text-orange-400">Services</a></li>
+        <li><a href="realisations.html" class="hover:text-orange-400">Réalisations</a></li>
+        <li><a href="devis.html" class="hover:text-orange-400">Demande de devis</a></li>
+        <li><a href="contact.html" class="hover:text-orange-400">Contact</a></li>
       </ul>
     </div>
+
+    <!-- Bloc coordonnées -->
     <div>
-      <h5 class="font-bold text-lg mb-2">Contact</h5>
-      <p>📍 Adresse : Ouagadougou, Burkina Faso</p>
-      <p>📞 Téléphone : +226 74 81 56 83 / 77 10 04 04</p>
-      <p>📧 Email : ystephane@gmail.com</p>
-      <p>📞 WhatsApp : +226 74 81 56 83 / 77 10 04 04</p>
-      <p>📧 Localisation : [a integrer]</p>
+      <h3 class="text-lg font-semibold mb-3">Contact</h3>
+      <ul class="space-y-2 text-sm text-gray-300">
+        <li>📞 +226 74 81 56 83 / 77 10 04 04</li>
+        <li>💬 WhatsApp : +226 74 81 56 83</li>
+        <li>📧 <a href="mailto:ystephane593@gmail.com" class="text-orange-400 hover:underline">ystephane593@gmail.com</a></li>
+        <li>📍 <a href="https://maps.google.com/?q=Ouagadougou" target="_blank" class="text-orange-400 hover:underline">Ouagadougou, Burkina Faso</a></li>
+      </ul>
     </div>
+
+    <!-- Bloc Google Map -->
+    <div class="w-full h-56 rounded-lg overflow-hidden shadow-lg">
+      <iframe 
+        src="https://maps.google.com/?q=Ouagadougou" 
+        width="100%" height="100%" 
+        style="border:0;" allowfullscreen="" 
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
   </div>
-  <p class="text-center mt-8 text-sm">© 2025 EC2E/BTP – Tous droits réservés</p>
+
+  <!-- Bas de page -->
+  <div class="border-t border-gray-700 mt-6 py-4 text-center text-sm text-gray-400">
+    © 2025 <span class="font-semibold">EC2E/BTP</span> – Tous droits réservés.
+  </div>
 </footer>
