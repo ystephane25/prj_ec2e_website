@@ -15,52 +15,60 @@
   <div id="header-container"></div>
 
   <!-- Section principale -->
-  <section class="bg-[url('https://images.unsplash.com/photo-1581090700227-4c3b8c403e45')] bg-cover bg-center h-[60vh] flex items-center justify-center">
-    <div class="bg-black bg-opacity-60 p-8 rounded-lg text-white text-center">
-      <h2 class="text-4xl font-bold mb-4">Construire l'avenir, un projet à la fois</h2>
-      <p class="mb-4 text-lg">Expertise en construction, rénovation et génie civil.</p>
-      <a href="devis.html" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold">Demander un devis</a>
+  <!-- Hero section -->
+  <section class="relative h-[80vh] bg-cover bg-center flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1581090700227-4c3b8c403e45');">
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative z-10 text-center text-white animate-fade-in-down">
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Le bâtisseur de la nouvelle génération. <br> Nous réalisons vos projets avec rigueur, innovation et engagement.</h2>
+      <p class="text-lg mb-6">Expertise en construction, rénovation et génie civil</p>
+      <a href="devis.html" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded transition">Demander un devis</a>
     </div>
   </section>
 
   <!-- Services -->
-  <section class="py-16 px-4 max-w-7xl mx-auto">
-    <h3 class="text-3xl font-bold text-center mb-10">Nos Services</h3>
+  <section id="services" class="py-16 px-4 max-w-7xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12">Nos Services</h2>
     <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
-        <h4 class="text-xl font-bold mb-2">Construction générale</h4>
-        <p>Nous réalisons vos projets immobiliers clé en main, du gros œuvre à la finition.</p>
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+        <h3 class="text-xl font-semibold mb-2 text-blue-700">Construction générale</h3>
+        <p class="text-sm">Du gros œuvre à la finition, nos équipes bâtissent vos projets clé en main.</p>
       </div>
-      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
-        <h4 class="text-xl font-bold mb-2">Rénovation</h4>
-        <p>Réhabilitation complète de bâtiments anciens, appartements, bureaux et maisons.</p>
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+        <h3 class="text-xl font-semibold mb-2 text-blue-700">Rénovation</h3>
+        <p class="text-sm">Transformation et modernisation d'appartements, maisons et bâtiments professionnels.</p>
       </div>
-      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
-        <h4 class="text-xl font-bold mb-2">Génie civil</h4>
-        <p>Ouvrages publics, routes, fondations spéciales, voiries, canalisations.</p>
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+        <h3 class="text-xl font-semibold mb-2 text-blue-700">Génie civil</h3>
+        <p class="text-sm">Ouvrages publics, routes, fondations spéciales, voiries et réseaux divers.</p>
       </div>
     </div>
-    <div class="text-center mt-8">
-      <a href="services.html" class="text-blue-600 font-semibold underline">Voir tous les services</a>
+    <div class="text-center mt-10">
+      <a href="services.html" class="text-blue-600 font-medium underline hover:text-blue-800 transition">Voir tous les services</a>
     </div>
   </section>
 
   <!-- Réalisations -->
-  <section class="bg-gray-100 py-16 px-4">
-    <h3 class="text-3xl font-bold text-center mb-10">Nos Réalisations</h3>
+  <section id="realisations" class="bg-gray-100 py-16 px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">Nos Réalisations</h2>
     <div class="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto">
-      <img src="https://source.unsplash.com/400x300/?construction,site" alt="Construction site" class="rounded-lg shadow" />
-      <img src="https://source.unsplash.com/400x300/?building,architecture" alt="Architecture" class="rounded-lg shadow" />
-      <img src="https://source.unsplash.com/400x300/?renovation,house" alt="Rénovation maison" class="rounded-lg shadow" />
+      <img src="https://source.unsplash.com/400x300/?construction" alt="Chantier" class="rounded-lg shadow-md hover:scale-105 transition duration-300">
+      <img src="https://source.unsplash.com/400x300/?building" alt="Bâtiment" class="rounded-lg shadow-md hover:scale-105 transition duration-300">
+      <img src="https://source.unsplash.com/400x300/?renovation" alt="Rénovation" class="rounded-lg shadow-md hover:scale-105 transition duration-300">
     </div>
-    <div class="text-center mt-8">
-      <a href="realisations.html" class="text-blue-600 font-semibold underline">Voir plus de projets</a>
+    <div class="text-center mt-10">
+      <a href="realisations.html" class="text-blue-600 font-medium underline hover:text-blue-800 transition">Voir plus de projets</a>
     </div>
   </section>
 
+  <!-- Contact rapide CTA -->
+  <section class="py-16 bg-blue-700 text-white text-center">
+    <h2 class="text-3xl font-bold mb-4">Un projet en tête ?</h2>
+    <p class="mb-6">Contactez-nous pour obtenir un devis gratuit et personnalisé</p>
+    <a href="contact.html" class="bg-white text-blue-700 px-6 py-3 rounded font-semibold hover:bg-gray-200 transition">Contactez-nous</a>
+  </section>
   <!-- Conteneur pour le footer -->
   <div id="footer-container"></div>
-  
+
  <script src="js/script.js"></script>
 </body>
 </html>
