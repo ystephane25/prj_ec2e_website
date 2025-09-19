@@ -36,3 +36,22 @@ nav a.active {
 .mobile-link:hover {
   background-color: #1e40af;
 }
+
+
+body {
+      font-family: 'Poppins', sans-serif;
+    }
+    h2, h3 {
+      letter-spacing: 0.5px;
+    }
+    .service-icon {
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+    .service-icon:hover {
+      transform: scale(1.2);
+      color: #1e3a8a;
+    }
+    .service-card:hover h3 {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
