@@ -1,63 +1,69 @@
 <!-- contact.html -->
-<!-- Page de contact -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | BTP</title>
+  <title>Contact | EC2E/BTP</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800">
+
   <!-- Conteneur pour le header -->
   <div id="header-container"></div>
 
-  <!-- Formulaire de contact -->
-<section class="max-w-2xl mx-auto py-20 px-4" id="contact">
-  <h2 class="text-4xl font-bold text-center text-blue-900 mb-6">Nous contacter</h2>
-  <p class="text-center text-gray-600 mb-10">Une question ? Un projet ? Laissez-nous un message.</p>
+  <section class="max-w-xl mx-auto py-16 px-4">
+    <h2 class="text-4xl font-bold text-center text-blue-800 mb-4">Contactez-nous</h2>
+    <p class="text-center text-gray-600 mb-10">
+      Remplissez ce formulaire et notre équipe vous répondra rapidement.
+    </p>
 
-  <form id="contactForm" class="space-y-6 bg-white shadow-md rounded-xl p-8">
-    <!-- Nom -->
-    <div>
-      <label class="block text-sm font-medium text-gray-700 mb-1">Nom complet</label>
-      <input type="text" name="user_name" required
-        class="w-full border border-gray-300 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500" />
-    </div>
+    <form id="contactForm" class="bg-white p-6 rounded-lg shadow-lg space-y-5">
+      <!-- Nom -->
+      <div>
+        <label for="name" class="block font-medium mb-1">Nom complet</label>
+        <input id="name" name="user_name" type="text" placeholder="Votre nom"
+          class="w-full border px-4 py-2 rounded focus:ring-2 focus:ring-blue-500" required>
+      </div>
 
-    <!-- Email -->
-    <div>
-      <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
-      <input type="email" name="user_email" required
-        class="w-full border border-gray-300 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500" />
-    </div>
+      <!-- Email -->
+      <div>
+        <label for="email" class="block font-medium mb-1">Email</label>
+        <input id="email" name="user_email" type="email" placeholder="Votre email"
+          class="w-full border px-4 py-2 rounded focus:ring-2 focus:ring-blue-500" required>
+      </div>
 
-    <!-- Message -->
-    <div>
-      <label class="block text-sm font-medium text-gray-700 mb-1">Message</label>
-      <textarea name="message" rows="5" required
-        class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-    </div>
+      <!-- Sujet -->
+      <div>
+        <label for="subject" class="block font-medium mb-1">Sujet</label>
+        <input id="subject" name="subject" type="text" placeholder="Sujet de votre message"
+          class="w-full border px-4 py-2 rounded focus:ring-2 focus:ring-blue-500">
+      </div>
 
-    <!-- Bouton -->
-    <div class="text-center">
-      <button type="submit"
-        class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition">
+      <!-- Message -->
+      <div>
+        <label for="message" class="block font-medium mb-1">Message</label>
+        <textarea id="message" name="message" placeholder="Votre message..."
+          class="w-full border px-4 py-2 rounded h-32 focus:ring-2 focus:ring-blue-500" required></textarea>
+      </div>
+
+      <!-- Bouton -->
+      <button type="submit" id="contactSubmit"
+        class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded transition duration-300 w-full font-medium">
         ✉️ Envoyer le message
       </button>
-    </div>
-  </form>
+    </form>
 
-  <div id="formMessage" class="text-center mt-6 text-sm"></div>
-</section>
+    <!-- Zone de message -->
+    <div id="contactMessage" class="text-center mt-6 text-sm"></div>
+  </section>
 
-  
-  <!-- Conteneur pour le footer -->
+    <!-- Footer -->
   <div id="footer-container"></div>
+
   <!-- EmailJS SDK -->
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
- <script src="js/script.js"></script>
-
+  <!-- Script -->
+  <script src="js/script.js"></script>
 </body>
 </html>
